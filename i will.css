@@ -1,0 +1,3 @@
+#vc-spotify-progress-bar [class^=barFill-] {
+    background: var(--spotify);
+}
