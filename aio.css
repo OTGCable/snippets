@@ -353,3 +353,8 @@ textarea[placeholder*="Review @"] {
     transform: scale(1);
 }
 
+/*Remove Invite Button next to channel name*/
+.actionIcon-2sw4Sl {
+    display: none;
+}
+
