@@ -146,20 +146,6 @@ across the entire client
 /*Better Discord font (MIGHT BREAK)*/
 @import url(https://cdn.jsdelivr.net/gh/Overimagine1/old-discord-font/source.min.css);
 
-/*Infinite Discord Resizablility*/
-@media screen and (max-width: 1000px) {
-  [class^=membersWrap], /* members list */
-  [aria-label*="Member List"], /* button to hide/show members list */
-  nav[class*=guilds] + [class^=base] > [class^=content] > [class^=sidebar], /* channels list */
-  nav[class*=guilds][class^=wrapper] /* servers list */
-  { display: none; }
-
-  @media screen and (max-height: 500px) {
-    /* channel header */
-    [aria-label="Channel header"] { display: none !important;}
-    nav[class*=guilds] + [class^=base] > [class^=content] > [class^=chat] { padding-top: 0px !important;}
-  }
-}
 
 /* eat my dick (lol) */
 [class*=wumpusTooltip] {
@@ -348,3 +334,79 @@ textarea[placeholder*="Review @"] {
     display: none;
 }
 
+/* Re-round Spotify Status Images */
+[class^=assetsLargeImageSpotify-]{border-radius:8px;}
+
+/* Hide New Message Stuff When Unfocused */
+/* Red New Message Bar */
+html:not(.app-focused) [class^=.isUnread-] {
+    border-color: transparent;
+}
+[class^=.isUnread-] { 
+    transition: .15s;
+}
+/* New Message Bar */
+html:not(.app-focused) [class^=..newMessagesBar-] {
+    opacity: 0;
+}
+[class^=..newMessagesBar-] {
+    transition: .15s;
+}
+
+/* Better Allignment or wtvr. */
+[aria-label="User area"] {
+    margin: 16px;
+    border-radius: 8px;
+}
+[aria-label="User area"] [class^="container-"] {
+    border-radius: 8px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+[aria-label="User area"] [aria-label="Set Status"] {
+    min-width: unset;
+}
+
+[aria-label="User area"] [class^="nameTag-"] [class*="title-"] {
+    max-width: 32pt;
+}
+
+[class^="channelTextArea-"] {
+    margin-bottom: 16px;
+}
+
+[class^="channelTextArea-"] [class^="scrollableContainer-"] {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    min-height: 52px;
+    flex-wrap: wrap;
+}
+
+[class^="channelTextArea-"] [class^="scrollableContainer-"] [class^="inner-"] {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+[class^="channelTextArea-"] [class^="scrollableContainer-"] ul[role="list"] {
+    flex-grow: 1;
+}
+
+/*Change "Discord" Text in top left.*/
+.wordmarkWindows-2dq6rw svg {
+    display: none;
+}
+.wordmarkWindows-2dq6rw::after {
+    content: 'Bencord';
+    display: block;
+    position: relative;
+    width: 200px;
+    height: 16px;
+    line-height: 16px;
+    font-family: var(--font-headline);
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--muted-text);
+}
