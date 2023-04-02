@@ -323,7 +323,7 @@ html:not(.app-focused) [class^=..newMessagesBar-] {
     transition: .15s;
 }
 */
-/* Better Alignment or wtvr. */
+/* Better Alignment or wtvr.
 [aria-label="User area"] {
     margin: 16px;
     border-radius: 8px;
@@ -364,7 +364,7 @@ html:not(.app-focused) [class^=..newMessagesBar-] {
     flex-grow: 1;
 }
 
-
+ */
 /*Change "Discord" Text in top left.*/
 .wordmarkWindows-2dq6rw svg {
     display: none;
