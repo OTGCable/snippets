@@ -381,3 +381,81 @@ html:not(.app-focused) [class^=..newMessagesBar-] {
     font-weight: 600;
     color: var(--muted-text);
 }
+
+/*i'm new here, say hi!*/
+[class*=newMemberBadge]:before {
+    content: url(https://cdn.discordapp.com/emojis/1024751291504791654.gif?size=64&quality=lossless);
+    transform: scale(0.32) translate(-100%, -110%);
+    display: inline-block;
+}
+
+/*show full bio*/
+[class|=userPopoutInner] [style*="-webkit-line-clamp"] {
+    -webkit-line-clamp: unset !important;
+}
+
+/*A decent theme*/
+:root {
+  --theme-h: 223.5;
+  --theme-s: 46.51162790697674%;
+  --theme-l: 16.862745098039216%;
+}
+
+/* Replace the new pleading face emoji and face holding back tears emoji with the old one in the discord chat bar emoji button */
+
+.sprite-2lxwfc {
+  background-image: url('https://raw.githubusercontent.com/Poki-Pancake/junkyard/main/look-what-they-took-from-us.png')
+}
+
+/* Match bottom border on user profile container with their status - Border change by DeadVoxels#3520, colour vars left over from Jaegerwald#4833's attempt to help me with this. Thanks a ton for getting me into advanced selectors so I could make this though, Jaeger! */
+:root {
+    --online-color: #23a559;
+    --idle-color: #f0b132;
+    --dnd-color: #f23f42;
+    --offline-color: #80848e;
+}
+.container-YkUktl:has(.avatar-1EWyVD[aria-label*="Online"]) {
+    border-bottom: 3px solid var(--online-color)!important;
+}
+.container-YkUktl:has(.avatar-1EWyVD[aria-label*="Idle"]) {
+    border-bottom: 3px solid var(--idle-color)!important;
+}
+.container-YkUktl:has(.avatar-1EWyVD[aria-label*="Do Not Disturb"]) {
+    border-bottom: 3px solid var(--dnd-color)!important;
+}
+.container-YkUktl:has(.avatar-1EWyVD[aria-label*="Invisible"]) {
+    border-bottom: 3px solid var(--offline-color)!important;
+}
+/* Transition + fallback colour */
+.container-YkUktl {
+    transition: border 100ms ease-in;
+    border-bottom: 3px solid var(--blurple);
+}
+
+/* corner shigger */
+body:before {
+  position: fixed;
+  bottom: 0; right: 0;
+  width: 32px; height: 32px;
+  margin: 16px;
+  z-index: 999;
+  content: url(https://cdn.discordapp.com/emojis/1024751291504791654.gif?size=32&quality=lossless);
+}
+
+/*User Panel*/
+.withTagAsButton-OsgQ9L, .withTagless-10ooWt{
+    min-width: 212px!important;
+    position: fixed;
+    margin-top: -80px;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+button[aria-label="Enable Game Activity"], button[aria-label="Mute"], button[aria-label="Deafen"], button[aria-label="User Settings"] {
+    width: 48px;
+    background-color: var(--background-primary);
+    margin: 4px;
+    border-radius: 5px;
+}
+.container-YkUktl{
+    margin-top: 40px;
+}
