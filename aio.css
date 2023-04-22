@@ -442,20 +442,37 @@ body:before {
   content: url(https://cdn.discordapp.com/emojis/1024751291504791654.gif?size=32&quality=lossless);
 }
 
-/*User Panel*/
-.withTagAsButton-OsgQ9L, .withTagless-10ooWt{
-    min-width: 212px!important;
-    position: fixed;
-    margin-top: -80px;
-    margin-left: 5px;
-    border-radius: 5px;
+
+/* custom channel emote things idk looks cool i think */
+.unread-36eUEm {
+    background-color: white;
+    width: 1px;
+    height: 20px;
+    top: 7px;
+    margin-left: 14px !important;
+    margin: 0px;
+    border-radius: 20%;
 }
-button[aria-label="Enable Game Activity"], button[aria-label="Mute"], button[aria-label="Deafen"], button[aria-label="User Settings"] {
-    width: 48px;
-    background-color: var(--background-primary);
-    margin: 4px;
-    border-radius: 5px;
+
+/* less annoying pings */
+[class^=numberBadge] {
+    background: #666666 !important;
 }
-.container-YkUktl{
-    margin-top: 40px;
+
+[class*=unreadMentionsBar], [class*=mentionsBar] {
+    display: none;
 }
+
+/* channel name emoji coloring (swag) */
+[id="channels"] [class^=iconContainer-] {
+  display: none;
+}
+[id="channels"] [class^=iconContainer-] + [class^=channelEmoji-] {
+  margin-left: -4px;
+}
+/* Overlay color on text */
+[id="channels"] [class^=emojiColorFill-] {
+  z-index: 1;
+}
+
+
