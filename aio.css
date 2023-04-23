@@ -407,7 +407,7 @@ html:not(.app-focused) [class^=..newMessagesBar-] {
   background-image: url('https://raw.githubusercontent.com/Poki-Pancake/junkyard/main/look-what-they-took-from-us.png')
 }
 
-/* Match bottom border on user profile container with their status - Border change by DeadVoxels#3520, colour vars left over from Jaegerwald#4833's attempt to help me with this. Thanks a ton for getting me into advanced selectors so I could make this though, Jaeger! */
+/* Match bottom border on user profile container with their status - Border change by DeadVoxels#3520, colour vars left over from Jaegerwald#4833's attempt to help me with this. Thanks a ton for getting me into advanced selectors so I could make this though, Jaeger!
 :root {
     --online-color: #23a559;
     --idle-color: #f0b132;
@@ -475,4 +475,12 @@ body:before {
   z-index: 1;
 }
 
-
+/*hide spotify progress bar grabber*/
+#vc-spotify-progress-bar>[class^=slider] [class^=grabber] {
+  background-color: #00000000 !important;
+  border-color: #00000000 !important;
+}
+#vc-spotify-progress-bar>[class^=slider] [class^=grabber]:hover {
+  background-color: #bbb !important;
+  border-color: #bbb !important;
+}
