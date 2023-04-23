@@ -215,35 +215,6 @@ textarea[placeholder*="Review @"] {
     font-family: "Dashless", var(--font-primary);
 }
 
-/* rainbow mentions */
-
-.theme-dark .mentioned-Tre-dv .mention,
-.theme-light .mentioned-Tre-dv .mention:hover,
-.theme-dark .wrapper-1ZcZW-:hover,
-.theme-dark .wrapper-1ZcZW- {
-  background: transparent !important;
-}
-
-.theme-dark .mentioned-Tre-dv .mention,
-.theme-light .mentioned-Tre-dv .mention,
-.theme-dark .wrapper-1ZcZW-,
-.theme-dark .wrapper-1ZcZW-:hover,
-.theme-dark .mentioned-Tre-dv,
-.theme-dark .mentioned-Tre-dv {
-  color: #ea1c5b;
-  animation: rainbowmention 3s infinite linear;
-}
-
-@keyframes rainbowmention {
-  from {
-    -webkit-filter: hue-rotate(0deg);
-  }
-
-  to {
-    -webkit-filter: hue-rotate(360deg);
-  }
-}
-
 /* im losing my sanity */
 
 #vc-spotify-player {
@@ -315,15 +286,15 @@ html:not(.app-focused) [class^=.isUnread-] {
 [class^=.isUnread-] { 
     transition: .15s;
 }
-/* New Message Bar 
+/* New Message Bar */
 html:not(.app-focused) [class^=..newMessagesBar-] {
     opacity: 0;
 }
 [class^=..newMessagesBar-] {
     transition: .15s;
 }
-*/
-/* Better Alignment or wtvr.
+
+/* Better Alignment or wtvr.  */
 [aria-label="User area"] {
     margin: 16px;
     border-radius: 8px;
@@ -364,7 +335,7 @@ html:not(.app-focused) [class^=..newMessagesBar-] {
     flex-grow: 1;
 }
 
- */
+
 /*Change "Discord" Text in top left.*/
 .wordmarkWindows-2dq6rw svg {
     display: none;
@@ -389,11 +360,11 @@ html:not(.app-focused) [class^=..newMessagesBar-] {
     display: inline-block;
 }
 
-/*show full bio*/
+/*show full bio
 [class|=userPopoutInner] [style*="-webkit-line-clamp"] {
     -webkit-line-clamp: unset !important;
 }
-
+*/
 /*A decent theme*/
 :root {
   --theme-h: 223.5;
@@ -407,7 +378,7 @@ html:not(.app-focused) [class^=..newMessagesBar-] {
   background-image: url('https://raw.githubusercontent.com/Poki-Pancake/junkyard/main/look-what-they-took-from-us.png')
 }
 
-/* Match bottom border on user profile container with their status - Border change by DeadVoxels#3520, colour vars left over from Jaegerwald#4833's attempt to help me with this. Thanks a ton for getting me into advanced selectors so I could make this though, Jaeger!
+/* Match bottom border on user profile container with their status - Border change by DeadVoxels#3520, colour vars left over from Jaegerwald#4833's attempt to help me with this. Thanks a ton for getting me into advanced selectors so I could make this though, Jaeger! */
 :root {
     --online-color: #23a559;
     --idle-color: #f0b132;
@@ -426,6 +397,8 @@ html:not(.app-focused) [class^=..newMessagesBar-] {
 .container-YkUktl:has(.avatar-1EWyVD[aria-label*="Invisible"]) {
     border-bottom: 3px solid var(--offline-color)!important;
 }
+
+
 /* Transition + fallback colour */
 .container-YkUktl {
     transition: border 100ms ease-in;
@@ -475,12 +448,4 @@ body:before {
   z-index: 1;
 }
 
-/*hide spotify progress bar grabber*/
-#vc-spotify-progress-bar>[class^=slider] [class^=grabber] {
-  background-color: #00000000 !important;
-  border-color: #00000000 !important;
-}
-#vc-spotify-progress-bar>[class^=slider] [class^=grabber]:hover {
-  background-color: #bbb !important;
-  border-color: #bbb !important;
-}
+
