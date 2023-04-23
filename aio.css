@@ -1,3 +1,4 @@
+@import url("https://snare-hawk.github.io/snare-CSS/profile-panel-thingy.css");
 /*Blur Context Menu
 
 [class^=menu-],[class^=submenu-] {
@@ -66,8 +67,6 @@
 }
 
 /*Makes Message Bar consistent with profile menu.*/
-
-
 .form-3gdLxP {
   padding: 0px;
 }
@@ -167,24 +166,6 @@ textarea[placeholder*="Review @"] {
   opacity: 1;
 }
 
-/*Capitalize Channel Names*/
-#app-mount
-    [data-list-item-id*="channels___upcoming-events-"]
-    > div.name-28HaxV, .autocompleteRowVertical-EA9dCg[data-list-item-id*="channel-autocomplete"]
-    .autocompleteRowContentPrimary-1kUW9H
-    .colorInteractiveActive-30E9n8,
-.content-2a4AW9 .emptyChannelIcon-1YdEz2 ~ .size32-5yOQel,
-.quickswitcher-pKcM9U .result-u66Ywh .match-20K5f5,
-.sidebar-1tnWFu .mainContent-20q_Hp[href] .channelName-3KPsGw,
-.title-31SJ6t .iconWrapper-2awDjA,
-.title-17SveM,
-.wrapper-1ZcZW-[class="wrapper-1ZcZW- mention interactive"] {
-    text-transform: capitalize;
-}
-
-/*Uhh, makes profile panel thing look neat allegedly*/
-@import url("https://snare-hawk.github.io/snare-CSS/profile-panel-thingy.css");
-
 /*Devices page looks cool now */
 .session-9khLqt {
     background-color: var(--background-secondary);
@@ -214,62 +195,6 @@ textarea[placeholder*="Review @"] {
 {
     font-family: "Dashless", var(--font-primary);
 }
-
-/* im losing my sanity */
-
-#vc-spotify-player {
-    font-family: 'Noto Sans';
-    margin: 7px;
-}
-
-#vc-spotify-album-image {
-    border-radius: 5px;
-}
-
-#vc-spotify-song-title {
-    margin: 1px;
-}
-
-:root .pipModeShort-2NBL3P{
-    width: 420px;
-    height: 236px;
-}
-
-.withFrame-2dL45i {
-   height: 20px;
-}
-.typeWindows-2-g3UY .winButton-3UMjdg > svg {
-    display: none;
-}
-.typeWindows-2-g3UY .winButton-3UMjdg {
-    top: 0;
-    width: 12px;
-    height: 12px;
-    margin: 2px 12px 0px 0px;
-    border-radius: 12px;
-}
-.typeWindows-2-g3UY .winButton-3UMjdg::after {
-    content: '';
-    height: 12px;
-    width: 12px;
-    border-radius: 12px;
-}
-.typeWindows-2-g3UY .winButtonClose-3Q8ZH5::after {
-    background-color: hsl(0, 50%, 50%) !important;
-}
-.typeWindows-2-g3UY .winButtonMinMax-3RsPUg:nth-child(3)::after {
-    background-color: hsl(120, 50%, 50%) !important;
-}
-.typeWindows-2-g3UY .winButtonMinMax-3RsPUg:nth-child(4)::after {
-    background-color: hsl(50, 50%, 50%) !important;
-}
-.typeWindows-2-g3UY > div:hover::after {
-    transform: scale(1.1);
-}
-.typeWindows-2-g3UY > div:active::after {
-    transform: scale(1);
-}
-
 /*Remove Invite Button next to channel name*/
 .actionIcon-2sw4Sl {
     display: none;
@@ -341,7 +266,7 @@ html:not(.app-focused) [class^=..newMessagesBar-] {
     display: none;
 }
 .wordmarkWindows-2dq6rw::after {
-    content: 'Retard';
+    content: 'vwoop';
     display: block;
     position: relative;
     width: 200px;
@@ -360,11 +285,11 @@ html:not(.app-focused) [class^=..newMessagesBar-] {
     display: inline-block;
 }
 
-/*show full bio
+/*show full bio*/
 [class|=userPopoutInner] [style*="-webkit-line-clamp"] {
     -webkit-line-clamp: unset !important;
 }
-*/
+
 /*A decent theme*/
 :root {
   --theme-h: 223.5;
@@ -373,7 +298,6 @@ html:not(.app-focused) [class^=..newMessagesBar-] {
 }
 
 /* Replace the new pleading face emoji and face holding back tears emoji with the old one in the discord chat bar emoji button */
-
 .sprite-2lxwfc {
   background-image: url('https://raw.githubusercontent.com/Poki-Pancake/junkyard/main/look-what-they-took-from-us.png')
 }
