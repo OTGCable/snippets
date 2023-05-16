@@ -266,7 +266,7 @@ html:not(.app-focused) [class^=..newMessagesBar-] {
     display: none;
 }
 .wordmarkWindows-2dq6rw::after {
-    content: 'vwoop';
+    content: 'I am the shipwreck with its scattered and soaked wood littering the ocean like a nest of roaches.';
     display: block;
     position: relative;
     width: 200px;
