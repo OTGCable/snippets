@@ -269,7 +269,7 @@ html:not(.app-focused) [class^=..newMessagesBar-] {
     content: 'I am the shipwreck with its scattered and soaked wood littering the ocean like a nest of roaches.';
     display: block;
     position: relative;
-    width: 200px;
+    width: 1000px;
     height: 16px;
     line-height: 16px;
     font-family: var(--font-headline);
