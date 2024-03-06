@@ -430,4 +430,7 @@ a[href^='/channels'],
     margin-top: 4px;
 }
 
-
+/* make spotify + usermodal thing show playing song*/ 
+#vc-spotify-player + [class^="container"] {
+    background: transparent;
+}
